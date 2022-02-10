@@ -1,0 +1,15 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <color name="colorPrimary">#ffbb34</color>
+    <color name="colorPrimaryDark">#efc675</color>
+    <color name="colorAccent">#D81B60</color>
+
+    <color name="yellowOpacity">#80ffbb34</color>
+    <color name="yellowNormal">#ffbb34</color>
+    <color name="yellowDark">#FFAA00</color>
+
+    <color name="whiteNormal">#ffffff</color>
+    <color name="whiteDark">#EAEAEA</color>
+    <color name="green">@android:color/holo_green_dark</color>
+
+</resources>

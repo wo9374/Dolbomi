@@ -1,0 +1,77 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.cardview.widget.CardView xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:layout_marginLeft="8dp"
+    android:layout_marginTop="4dp"
+    android:layout_marginRight="8dp"
+    app:cardCornerRadius="4dp"
+    app:cardElevation="2dp"
+    app:cardMaxElevation="2dp"
+    app:cardPreventCornerOverlap="true"
+    app:cardUseCompatPadding="true">
+
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_weight="2"
+        android:orientation="vertical">
+
+        <TextView
+            android:id="@+id/noticedetail_menu_text"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_margin="8dp"
+            android:gravity="center"
+            android:text="공지" />
+
+        <TextView
+            android:id="@+id/noticedetail_title_text"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_margin="8dp"
+            android:ellipsize="end"
+            android:gravity="center"
+            android:maxLines="1"
+            android:text="제목"
+            android:textColor="@android:color/black"
+            android:textSize="20sp"
+            android:textStyle="bold" />
+
+        <TextView
+            android:id="@+id/noticedetail_name_text"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_margin="8dp"
+            android:text="작성자" />
+
+        <TextView
+            android:id="@+id/noticedetail_contents_text"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_margin="8dp"
+            android:ellipsize="end"
+            android:text="내용"
+            android:textSize="12sp" />
+        <!-- 맥스 라인 2는 내용 2줄넘게 작성시 뒤에 ... 표시
+                 일립사이즈 end는 뒷 부분 글자 줄임표 표시
+                 android:maxLines="2"-->
+
+        <ImageView
+            android:id="@+id/noticedetailimg"
+            android:layout_width="match_parent"
+            android:layout_height="335dp"
+            app:srcCompat="@drawable/childicon1" />
+
+        <TextView
+            android:id="@+id/noticedetail_date_text"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_margin="8dp"
+            android:gravity="center"
+            android:text="날짜"
+            android:textSize="12sp" />
+    </LinearLayout>
+</androidx.cardview.widget.CardView>

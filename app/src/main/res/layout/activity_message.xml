@@ -1,0 +1,46 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".chat.MessageActivity">
+
+    <androidx.recyclerview.widget.RecyclerView
+        android:id="@+id/messageActivity_recyclerview"
+        android:layout_width="match_parent"
+        android:layout_height="651dp"
+        android:layout_above="@+id/messageActivity_button"
+        android:layout_alignParentStart="true"
+        android:layout_alignParentLeft="true"
+        android:layout_alignParentTop="true"
+        android:layout_alignParentEnd="true"
+        android:layout_alignParentRight="true"
+        android:layout_marginTop="30dp"
+        android:layout_marginEnd="0dp"
+        android:layout_marginRight="0dp"
+        android:layout_marginBottom="0dp" />
+
+    <EditText
+        android:id="@+id/messageActivity_editText"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/messageActivity_recyclerview"
+        android:layout_alignParentStart="true"
+        android:layout_alignParentLeft="true"
+        android:layout_alignParentBottom="true"
+        android:layout_toStartOf="@+id/messageActivity_button"
+        android:layout_toLeftOf="@+id/messageActivity_button"
+        android:background="@color/yellowOpacity" />
+
+    <Button
+        android:id="@+id/messageActivity_button"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentEnd="true"
+        android:layout_alignParentRight="true"
+        android:layout_alignParentBottom="true"
+        android:background="@drawable/bt_yellow"
+        android:text="전송" />
+
+</RelativeLayout>

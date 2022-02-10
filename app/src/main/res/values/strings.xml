@@ -1,0 +1,20 @@
+<resources>
+    <string name="app_name">돌보미</string>
+    <string name="title_gps">차량위치 정보 확인</string>
+    <string name="title_diary">알림장</string>
+    <string name="title_main">홈</string>
+    <string name="title_notice">공지사항</string>
+    <string name="write_notice">공지사항 작성</string>
+    <string name="title_calendar">일정표</string>
+    <string name="title_eating">식단표</string>
+    <string name="write_eating">식단표 작성</string>
+    <string name="title_album">앨범</string>
+    <string name="title_chat">채팅</string>
+    <string name="title_setting">원 설정</string>
+    <string name="title_attendance">출석부</string>
+    <string name="msg_token_fmt" translatable="false">InstanceID Token: %s</string>
+    <string name="default_notification_channel_name">name</string>
+    <string name="default_notification_channel_id">id</string>
+    <string name="facebook_app_id">2421142921536296</string>
+    <string name="fb_login_protocol_scheme">fb2421142921536296</string>
+</resources>

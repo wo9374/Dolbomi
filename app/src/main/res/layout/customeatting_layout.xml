@@ -1,0 +1,102 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:orientation="vertical" android:layout_width="match_parent"
+    android:layout_height="match_parent">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:gravity="center_vertical">
+
+        <LinearLayout
+            android:layout_width="wrap_content"
+            android:layout_height="match_parent"
+            android:gravity="center_horizontal|center_vertical"
+            android:orientation="vertical">
+
+            <TextView
+                android:id="@+id/textView22"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_weight="1"
+                android:gravity="center_vertical"
+                android:text="오전간식 : "
+                android:textSize="18sp" />
+
+            <TextView
+                android:id="@+id/textView23"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_weight="1"
+                android:gravity="center_vertical"
+                android:text="점심 :"
+                android:textSize="18sp" />
+
+            <TextView
+                android:id="@+id/textView24"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_weight="1"
+                android:gravity="center_vertical"
+                android:text="저녁 :"
+                android:textSize="18sp" />
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:orientation="vertical">
+
+            <EditText
+                android:id="@+id/edit_update_first"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_margin="16dp"
+                android:layout_weight="2"
+                android:hint="오전간식" />
+
+            <EditText
+                android:id="@+id/edit_update_second"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_margin="16dp"
+                android:layout_weight="2"
+                android:hint="점심" />
+
+            <EditText
+                android:id="@+id/edit_update_third"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_margin="16dp"
+                android:layout_weight="2"
+                android:hint="저녁" />
+        </LinearLayout>
+
+    </LinearLayout>
+
+    <TextView
+        android:id="@+id/edit_update_dateeat"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:hint="날짜" />
+
+    <TextView
+        android:id="@+id/edit_update_firsturl"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:hint="오전간식사진" />
+
+    <TextView
+        android:id="@+id/edit_update_secondurl"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:hint="점심사진" />
+
+    <TextView
+        android:id="@+id/edit_update_thirdurl"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:hint="저녁사진" />
+
+</LinearLayout>

@@ -1,0 +1,151 @@
+<?xml version="1.0" encoding="utf-8"?>
+<manifest xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    package="com.example.project">
+    <!--
+         The ACCESS_COARSE/FINE_LOCATION permissions are not required to use
+         Google Maps Android API v2, but you must specify either coarse or fine
+         location permissions for the 'MyLocation' functionality.
+    -->
+    <uses-permission android:name="android.permission.INTERNET" />
+    <uses-permission android:name="android.permission.ACCESS_FINE_LOCATION" />
+    <uses-permission android:name="android.permission.ACCESS_COARSE_LOCATION" />
+    <uses-permission android:name="android.permission.WRITE_EXTERNAL_STORAGE" />
+    <uses-permission android:name="android.permission.READ_EXTERNAL_STORAGE" />
+
+    <uses-feature android:name="android.hardware.camera2" />
+
+    <application
+        android:allowBackup="true"
+        android:icon="@mipmap/ic_launcher"
+        android:label="@string/app_name"
+        android:largeHeap="true"
+        android:roundIcon="@mipmap/ic_launcher_round"
+        android:supportsRtl="true"
+        android:theme="@style/AppTheme"
+        tools:ignore="GoogleAppIndexingWarning">
+
+
+        <uses-library
+            android:name="org.apache.http.legacy"
+            android:required="false" />
+
+        <meta-data
+            android:name="com.google.android.geo.API_KEY"
+            android:value="@string/google_maps_key" />
+        <meta-data
+            android:name="com.google.firebase.messaging.default_notification_icon"
+            android:resource="@drawable/childicon1" />
+        <meta-data
+            android:name="com.google.firebase.messaging.default_notification_icon"
+            android:resource="@drawable/childicon1" />
+        <!-- <meta-data -->
+        <!-- android:name="com.google.firebase.messaging.default_notification_channel_id" -->
+        <!-- android:value="@string/default_notification_channel_id" /> -->
+        <activity
+            android:name=".SplashActivity"
+            android:screenOrientation="portrait"
+            android:theme="@style/SplashTheme">
+            <intent-filter>
+                <action android:name="android.intent.action.MAIN" />
+
+                <category android:name="android.intent.category.LAUNCHER" />
+            </intent-filter>
+        </activity>
+
+        <provider
+            android:name="androidx.core.content.FileProvider"
+            android:authorities="com.example.project"
+            android:exported="false"
+            android:grantUriPermissions="true">
+            <meta-data
+                android:name="android.support.FILE_PROVIDER_PATHS"
+                android:resource="@xml/file_path" />
+        </provider>
+
+        <activity android:name=".gps" />
+        <activity
+            android:name=".LoginActivity"
+            android:theme="@style/AppTheme" />
+        <activity
+            android:name=".MainActivity"
+            android:theme="@style/AppTheme" />
+        <activity
+            android:name=".MembershipPopup"
+            android:configChanges="keyboardHidden|orientation|screenSize"
+            android:theme="@style/DialogTheme" />
+        <activity
+            android:name=".TeacherMain"
+            android:label="@string/title_main"
+            android:theme="@style/TeacherTheme" />
+        <activity
+            android:name=".TeacherSetting"
+            android:theme="@style/TeacherTheme" />
+        <activity android:name=".TeacherManager" />
+        <activity android:name=".TeacherTmap" />
+        <activity
+            android:name=".TeacherDiary"
+            android:label="@string/title_diary" />
+        <activity
+            android:name=".chat.MessageActivity"
+            android:label="@string/title_chat"
+            android:theme="@style/TeacherTheme"/>
+        <activity
+            android:name=".TeacherChat"
+            android:label="@string/title_chat" />
+        <activity
+            android:name=".TeacherEatting"
+            android:label="@string/title_eating" />
+        <activity android:name=".EattingWriteActivity" />
+        <activity
+            android:name=".DiaryWriteActivity"
+            android:theme="@style/DialogTheme" />
+        <activity
+            android:name=".TeacherNotice"
+            android:label="@string/title_notice" />
+        <activity
+            android:name=".NoticeWriteActivity"
+            android:label="@string/write_notice"
+            android:windowSoftInputMode="adjustNothing" />
+        <activity android:name=".CustomCalendarActivity" />
+        <activity
+            android:name=".TeacherAlbum"
+            android:label="@string/title_album" />
+        <activity android:name=".TeacherAttendance" />
+        <activity android:name=".TeacherAttendanceResult" />
+        <activity android:name=".AttendanceActivity"
+            android:label="@string/title_attendance"/>
+<!--        <service-->
+<!--            android:name=".MyFirebaseInstanceIDService">-->
+<!--            <intent-filter>-->
+<!--                <action android:name="com.google.firebase.MESSAGING_EVENT"/>-->
+<!--            </intent-filter>-->
+<!--        </service>-->
+        <service
+            android:name=".FireBaseMessagingService">
+            <intent-filter>
+                <action android:name="com.google.firebase.MESSAGING_EVENT"/>
+            </intent-filter>
+        </service>
+        <activity
+            android:name=".Parent.ParentMain"
+            android:label="@string/title_main"
+            android:theme="@style/TeacherTheme" />
+        <activity
+            android:name=".Parent.ParentDiary"
+            android:label="@string/title_diary" />
+        <activity
+            android:name=".Parent.ParentEatting"
+            android:label="@string/title_eating" />
+        <activity
+            android:name=".Parent.ParentAlbum"
+            android:label="@string/title_album" />
+        <activity
+            android:name=".Parent.ParentNotice"
+            android:label="@string/title_notice" />
+        <activity android:name=".Parent.ParentCustomCalendarActivity" />
+        <activity android:name=".Parent.ParentSetting"
+            android:theme="@style/TeacherTheme"></activity>
+    </application>
+
+</manifest>

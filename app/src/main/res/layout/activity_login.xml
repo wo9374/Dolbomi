@@ -1,0 +1,81 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical">
+
+    <LinearLayout
+        android:id="@+id/li_box"
+        android:layout_width="match_parent"
+        android:layout_height="225dp"
+        android:background="@color/colorPrimary"
+        android:orientation="vertical">
+
+        <ImageView
+            android:layout_width="170dp"
+            android:layout_height="110dp"
+            android:layout_gravity="center"
+            android:layout_marginTop="25dp"
+            android:src="@drawable/childicon1" />
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center"
+            android:layout_marginTop="1dp"
+            android:text="돌보미"
+            android:textColor="#ffffff"
+            android:textSize="25dp"
+            android:textStyle="bold" />
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center"
+            android:text="Login Window"
+            android:textColor="#ffffff"
+            android:textSize="18dp"
+            android:textStyle="bold" />
+    </LinearLayout>
+
+    <EditText
+        android:id="@+id/login_id"
+        android:layout_width="300dp"
+        android:layout_height="50dp"
+        android:layout_below="@+id/li_box"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="80dp"
+        android:hint="아이디" />
+
+    <EditText
+        android:id="@+id/login_pw"
+        android:layout_width="300dp"
+        android:layout_height="50dp"
+        android:layout_below="@+id/login_id"
+        android:layout_centerHorizontal="true"
+        android:hint="비밀번호"
+        android:inputType="textPassword" />
+
+    <Button
+        android:id="@+id/loginBtn"
+        android:layout_width="145dp"
+        android:layout_height="55dp"
+        android:layout_below="@+id/login_pw"
+        android:layout_alignLeft="@+id/login_pw"
+        android:layout_marginTop="50dp"
+        android:background="@drawable/bt_yellow"
+        android:text="로그인"
+        android:textAllCaps="false" />
+
+    <Button
+        android:id="@+id/signupBtn"
+        android:layout_width="145dp"
+        android:layout_height="55dp"
+        android:layout_alignTop="@+id/loginBtn"
+        android:layout_alignEnd="@+id/login_pw"
+        android:background="@drawable/bt_yellow"
+        android:onClick="onClick"
+        android:text="회원가입"
+        android:textAllCaps="false" />
+
+</RelativeLayout>

@@ -1,0 +1,4 @@
+<resources>
+    <!--다이어리 플로팅 버튼 마진값-->
+    <dimen name="fab_margin">30dp</dimen>
+</resources>

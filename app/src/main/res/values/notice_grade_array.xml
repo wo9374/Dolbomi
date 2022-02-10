@@ -1,0 +1,9 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <string-array name="notice_grade_array">
+        <item>햇님반</item>
+        <item>달님반</item>
+        <item>별님반</item>
+        <item>원 공지사항</item>
+    </string-array>
+</resources>

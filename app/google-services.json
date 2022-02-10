@@ -1,0 +1,48 @@
+{
+  "project_info": {
+    "project_number": "186960660899",
+    "firebase_url": "https://dolbomi1.firebaseio.com",
+    "project_id": "dolbomi1",
+    "storage_bucket": "dolbomi1.appspot.com"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:186960660899:android:465845450dcf81da4b7216",
+        "android_client_info": {
+          "package_name": "com.example.project"
+        }
+      },
+      "oauth_client": [
+        {
+          "client_id": "186960660899-4d0g2m7obpkks5iikbnavagri05h0oue.apps.googleusercontent.com",
+          "client_type": 1,
+          "android_info": {
+            "package_name": "com.example.project",
+            "certificate_hash": "96b6668aa8934baa10d7422cd34e2479f40c6e6d"
+          }
+        },
+        {
+          "client_id": "186960660899-b3j6kq03bpe202befklcp464b9tsc45a.apps.googleusercontent.com",
+          "client_type": 3
+        }
+      ],
+      "api_key": [
+        {
+          "current_key": "AIzaSyBgx_kZkGU0s0Gbse9iZANBZCSwaPl5glI"
+        }
+      ],
+      "services": {
+        "appinvite_service": {
+          "other_platform_oauth_client": [
+            {
+              "client_id": "186960660899-b3j6kq03bpe202befklcp464b9tsc45a.apps.googleusercontent.com",
+              "client_type": 3
+            }
+          ]
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}

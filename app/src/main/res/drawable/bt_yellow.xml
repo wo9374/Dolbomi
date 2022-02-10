@@ -1,0 +1,15 @@
+<?xml version="1.0" encoding="utf-8"?>
+<selector xmlns:android="http://schemas.android.com/apk/res/android">
+    <item android:state_pressed="true">
+        <shape>
+            <!--도형안에 채워질 노란색을 정의한다.-->
+            <solid android:color="@color/yellowDark"></solid>
+        </shape>
+    </item>
+    <item android:state_pressed="false">
+        <shape>
+            <!--도형안에 채워질 노란색을 정의한다.-->
+            <solid android:color="@color/yellowNormal"></solid>
+        </shape>
+    </item>
+</selector>

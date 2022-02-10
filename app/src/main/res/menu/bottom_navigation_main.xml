@@ -1,0 +1,15 @@
+<?xml version="1.0" encoding="utf-8"?>
+<menu xmlns:android="http://schemas.android.com/apk/res/android">
+    <item
+        android:id="@+id/action_people"
+        android:icon="@drawable/iconfinder_user_group_man_woman_2639943"
+        android:title="멤버"/>
+    <item
+        android:id="@+id/action_chat"
+        android:icon="@drawable/iconfinder_user_group_man_woman_2639943"
+        android:title="대화방"/>
+    <item
+        android:id="@+id/action_account"
+        android:icon="@drawable/iconfinder_user_group_man_woman_2639943"
+        android:title="상태메세지"/>
+</menu>

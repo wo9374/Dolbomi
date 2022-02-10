@@ -1,0 +1,94 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:orientation="vertical" android:layout_width="match_parent"
+    android:layout_height="match_parent">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_margin="10dp"
+        android:layout_weight="7"
+        android:orientation="vertical">
+
+        <Spinner
+            android:id="@+id/grade_spinner"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:spinnerMode="dialog" />
+
+        <EditText
+            android:id="@+id/notice_write_title_text"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:hint="제목을 작성해 주세요."
+            android:textColor="@android:color/black"
+            android:textSize="16sp" />
+
+
+        <TextView
+            android:id="@+id/notice_write_name_text"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="5dp"
+            android:layout_marginTop="9dp"
+            android:layout_weight="1"
+            android:ems="10"
+            android:gravity="center_vertical"
+            android:hint="작성자"
+            android:textSize="16sp" />
+
+        <EditText
+            android:id="@+id/notice_write_content_text"
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content"
+            android:layout_margin="8dp"
+            android:layout_weight="2"
+            android:background="@drawable/text_content_rounded"
+            android:hint="원 공지는 원에 속한 모든 멤버가 함께볼 수 있고, 반공지는 해당반에 속한 멤버만 볼 수 있습니다."
+            android:inputType="textMultiLine"
+            android:lines="8"
+            android:maxLines="80"
+            android:minLines="15"
+            android:scrollbars="vertical" />
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:orientation="horizontal">
+
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:layout_marginLeft="8dp"
+                android:layout_marginRight="8dp"
+                android:layout_weight="1"
+                android:gravity="center|center_horizontal"
+                android:text="(선택사항) \n 앨범 사진을 선택해 주세요." />
+
+            <ImageView
+                android:id="@+id/notice_write_image"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:layout_marginRight="8dp"
+                android:layout_weight="1"
+                android:onClick="albumBtn"
+                android:src="@drawable/ic_album_100dp" />
+
+        </LinearLayout>
+
+    </LinearLayout>
+
+    <Button
+        android:id="@+id/notice_upload_btn"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_gravity="bottom"
+        android:layout_weight="1"
+        android:background="@drawable/bt_yellow"
+        android:text="업로드"
+        android:textColor="#ffffff" />
+
+</LinearLayout>
